@@ -279,3 +279,19 @@ rooms =
 
 ```
 
+#### Map Component
+
+```
+<hotel-map 
+        enable-nearby=true 
+        enable-direction=true 
+        center=[[geocode]] 
+        hotel-name = [[name]]>
+</hotel-map>
+
+/// geocode
+geocode = {
+    lat : 43.12
+    lang : 34.34
+}
+```
