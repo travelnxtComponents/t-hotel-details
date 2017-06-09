@@ -169,12 +169,20 @@ hotel  = {
             reviewType : "Excellent"
             
         }
+```
+#### Room Listing
+```html
+    <hotel-room-list list=[[rooms]] loading="true|false" >
+    </hotel-room-list>
+```
 
 
-#### Rooms Object
+#### Rooms Component Param
 
 ```javascript
 
+loading = true; // if value true, then display loading 
+//room list object
 rooms = 
 		[
 			{
