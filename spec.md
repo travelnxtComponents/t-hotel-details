@@ -3,7 +3,7 @@
 
 #### Summary Section
 
-```html
+```javascript
 	<hotel-details-heading 
 			title="String"
 			sub-title = "String"
@@ -34,7 +34,7 @@
 
 #### Gallary
 
-```
+```javascript
 	<hotel-gallary images=[images]></hotel-gallary>
 
 
@@ -171,7 +171,7 @@ hotel  = {
         }
 ```
 #### Room Listing
-```html
+```javascript
     <hotel-room-list list=[[rooms]] loading="true|false" >
     </hotel-room-list>
 ```
@@ -281,14 +281,13 @@ rooms =
 
 #### Map Component
 
-```
+```javascript
 <hotel-map 
         enable-nearby=true 
         enable-direction=true 
         center=[[geocode]] 
         hotel-name = [[name]]>
 </hotel-map>
-
 /// geocode
 geocode = {
     lat : 43.12
