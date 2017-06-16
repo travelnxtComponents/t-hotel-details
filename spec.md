@@ -34,14 +34,14 @@
 
 #### Gallary
 
-```javascript
+```html
 	<hotel-gallary images=[images]></hotel-gallary>
 
 
 	images = [
-			"photo url 1",
-			"photo url 2"
-	]
+			{ "caption" : "image caption", "url" : "photo url 1", "category" : "room" },
+			{ "caption" : "image caption", "url" : "img url 2", "category" : "hotel" }
+		]
 
 ```
 
