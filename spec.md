@@ -35,7 +35,11 @@
 #### Gallary
 
 ```html
-	<hotel-gallary images=[images]></hotel-gallary>
+	<hotel-gallary 
+        images=[images]
+        enable-tiles="true"
+        >
+    </hotel-gallary>
 
 
 	images = [
@@ -57,15 +61,18 @@ hotel  = {
             "address": "101 MONTELAGO BOULEVARD  HENDERSON",
             "phoneNumber": "702 567 1234",
             "distance": 13.86,
-            "description": "The luxury hotel radiates a Moroccan atmosphere and comprises a total of 493 rooms spread over 9 floors. Amongst the hotel's facilities count an air-conditioned lobby with a 24-hour reception desk, lift access, a hotel safe, a cloakroom and a currency exchange desk. Further amenities include a newspaper stand, a range of shops, a hairdressing salon, a casino, a kids' club, and free car parking spaces. Dining options include a cozy bar and a pleasing restaurant. Guests may also make use of the public Internet access in addition to the laundry and 24-hour room services. Self and valet parking, secure golf bag storage, concierge-assisted boarding passes, and intra-resort on-demand transportation are also offered.",
+            
             "descriptions": [
                 {
-                    "key": "",
+                    "Name": "",
                     "value": "The luxury hotel radiates a Moroccan atmosphere and comprises a total of 493 rooms spread over 9 floors. Amongst the hotel's facilities count an air-conditioned lobby with a 24-hour reception desk, lift access, a hotel safe, a cloakroom and a currency exchange desk. Further amenities include a newspaper stand, a range of shops, a hairdressing salon, a casino, a kids' club, and free car parking spaces. Dining options include a cozy bar and a pleasing restaurant. Guests may also make use of the public Internet access in addition to the laundry and 24-hour room services. Self and valet parking, secure golf bag storage, concierge-assisted boarding passes, and intra-resort on-demand transportation are also offered."
                 }
             ],
             "heroImageUrl": "http://d3mj096p5q0e20.cloudfront.net/ti/HBD/55610/043509a_hb_a_001.jpg",
-            "geoCode": "36.113,-114.925",
+            "geoCode": {
+                "lat" : 36.113
+                "lang" : -114.925
+            },
             "amenities": [
                 {
                     "type": "Hotel",
@@ -93,14 +100,18 @@ hotel  = {
                 },
             ],
              "photoUrls": [
-                "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_004.jpg",
-                "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_006.jpg",
-                "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_007.jpg",
-                "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_w_002.jpg",
-                "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_p_003.jpg",
-                "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_r_005.jpg"
+
+                { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_004.jpg", "category" : "room"},
+                { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_006.jpg", "category" : "hotel"},
+                { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_007.jpg","category" : "room"}
+                { "url" :"http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_w_002.jpg","category" : "hotel"}
             ],
-            "pointsOfInterest": [],
+            "pointsOfInterest": [
+                { 
+                    "name" : "name",
+                    "description": "description"
+                }
+            ],
             "minFare": {
                 "areRatesAvailable": true,
                 "fare": {
@@ -131,12 +142,11 @@ hotel  = {
                 },
                 "fees" : [
                 	{
-                		type: "Agency",
-                		"money" : {
-	                    	"displayAmount" : "$10",
-	                    	"amount" : 10,
-	                    	"currency" : "USD"
-	                    }
+                		"type": "Agency",
+                        "displayAmount" : "$10",
+                        "amount" : 10,
+                        "currency" : "USD"
+	                    
                 	}
                 ],
                 "totalFee":{
@@ -164,9 +174,9 @@ hotel  = {
                 "name": "HotelBeds Test"
             },
 
-            userRating : "3.4",
-            userReviewCount : 500
-            reviewType : "Excellent"
+            "userRating" : "3.4",
+            "userReviewCount" : 500
+            "reviewType" : "Excellent"
             
         }
 ```
@@ -221,11 +231,9 @@ rooms =
                     "fees" : [
                     	{
                     		type: "Agency",
-                    		"money" : {
-		                    	"displayAmount" : "$10",
-		                    	"amount" : 10,
-		                    	"currency" : "USD"
-		                    }
+                            "displayAmount" : "$10",
+                            "amount" : 10,
+                            "currency" : "USD"
                     	}
                     ],
                     "totalFee":{
