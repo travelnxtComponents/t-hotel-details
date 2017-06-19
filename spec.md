@@ -71,7 +71,7 @@ hotel  = {
             "heroImageUrl": "http://d3mj096p5q0e20.cloudfront.net/ti/HBD/55610/043509a_hb_a_001.jpg",
             "geoCode": {
                 "lat" : 36.113
-                "lang" : -114.925
+                "long" : -114.925
             },
             "amenities": [
                 {
