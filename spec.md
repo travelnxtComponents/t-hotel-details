@@ -61,7 +61,7 @@
 ```
 
 ```javascript
-//popular amenities - This are static list. For popular list, need to map these static list with room amenities.
+//popular amenities - This are static list. For display popular list, need to map these static list with hotel amenities.
 popularStaticAmenities = [
     "Restaurants",
     "Parking",
