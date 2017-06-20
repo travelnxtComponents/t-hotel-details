@@ -3,7 +3,7 @@
 
 #### Summary Section
 
-```javascript
+```html
 	<hotel-details-heading 
 			title="String"
 			sub-title = "String"
@@ -11,8 +11,7 @@
 			phone=""
 			miles=""
 			price = [[price]]
-			resource = [[resource]] >
-
+			resource = [[resource]]>
 	</hotel-details-heading>
 ```
 
@@ -36,9 +35,8 @@
 
 ```html
 	<hotel-gallary 
-        images=[images]
-        enable-tiles="true"
-        >
+                    images=[images]
+                    enable-tiles="true">
     </hotel-gallary>
 
 
@@ -50,10 +48,30 @@
 ```
 
 
+
+
 #### Hotel Details Object
 
-```javascript
+```html
+    <t-hotel-details
+            hotel=[hotel]
+            resource = [resource]
+            popular-amenities=[popularStaticAmenities]>
+    </t-hotel-details>
+```
 
+```javascript
+//popular amenities - This are static list. For popular list, need to map these static list with room amenities.
+popularStaticAmenities = [
+    "Restaurants",
+    "Parking",
+    "Wi-Fi",
+    "Fitness Center",
+    "Outdoor Pool",
+    "Spa"
+]
+
+// Hotel Object
 hotel  = {
             "id": "55610",
             "name": "THE WESTIN LAKE LAS VEGAS RESORT &amp; SPA",
@@ -64,7 +82,7 @@ hotel  = {
             
             "descriptions": [
                 {
-                    "Name": "",
+                    "Type": "",
                     "value": "The luxury hotel radiates a Moroccan atmosphere and comprises a total of 493 rooms spread over 9 floors. Amongst the hotel's facilities count an air-conditioned lobby with a 24-hour reception desk, lift access, a hotel safe, a cloakroom and a currency exchange desk. Further amenities include a newspaper stand, a range of shops, a hairdressing salon, a casino, a kids' club, and free car parking spaces. Dining options include a cozy bar and a pleasing restaurant. Guests may also make use of the public Internet access in addition to the laundry and 24-hour room services. Self and valet parking, secure golf bag storage, concierge-assisted boarding passes, and intra-resort on-demand transportation are also offered."
                 }
             ],
@@ -76,27 +94,27 @@ hotel  = {
             "amenities": [
                 {
                     "type": "Hotel",
-                    "description": "24h check-in"
+                    "category": "24h check-in"
                 },
                 {
                     "type": "Hotel",
-                    "description": "24h. Reception"
+                    "category": "24h. Reception"
                 },
                 {
                     "type": "Room",
-                    "description": "Air-conditioned in common areas"
+                    "category": "Air-conditioned in common areas"
                 },
                 {
                     "type": "Hotel",
-                    "description": "American Express"
+                    "category": "American Express"
                 },
                 {
                     "type": "Hotel",
-                    "description": "Bar-s"
+                    "category": "Bar-s"
                 },
                 {
                     "type": "Room",
-                    "description": "Bath"
+                    "category": "Bath"
                 },
             ],
              "photoUrls": [
@@ -111,17 +129,7 @@ hotel  = {
                     "name" : "name",
                     "description": "description"
                 }
-            ],
-            "minFare": {
-                "areRatesAvailable": true,
-                "fare": {
-                    "amount": 165.3,
-                    "currency": "USD",
-                    "displayAmount": "USD 165.30"
-                },
-                "equivalentFares": null,
-                "equivalents": null
-            },
+            ]
             "rooms": null,
             "isCancellable": true,
             "allPassengersInfoRequired": false,
@@ -181,8 +189,12 @@ hotel  = {
         }
 ```
 #### Room Listing
-```javascript
-    <hotel-room-list list=[[rooms]] loading="true|false" >
+```html
+    <hotel-room-list 
+            list=[[rooms]] 
+            loading="true|false"
+            resource = [[resource]]
+            >
     </hotel-room-list>
 ```
 
@@ -287,18 +299,76 @@ rooms =
 
 ```
 
+#### Resource
+
+```json
+{
+    "room" : {
+        "guests" : "Guests",
+        "room" : "Room",
+        "roomType" : "Room Type",
+        "max" : "Max",
+        "options" : "Options",
+        "price" : "Price",
+        "total" : "Total",
+        "selected" : "Selected",
+        "more" : "more",
+        "roomPolicy" : "room Policy",
+        "showMoreRooms" : "Show More Rooms"
+    },
+
+    "loading" : "Loading..",
+    "priceInclusive" : "inclusive of all taxes and fees",
+    "description" : "Description",
+    "guestReview" : "Guest Review",
+    "hotelAmenities" : "Hotel Amenities" ,
+    "roomAmenities" : "Room Amenities",
+    "hotelPolicies" : "Hotel Policies",
+    "pointOfInterest" : "Point of interest",
+    "cancellation" : "Cancellation",
+    "checkIn" : "Check-in",
+    "checkOut" : "Check-out",
+    "continueToCheckout" : "CONTINUE TO CHECKOUT",
+    "mostPopularAmenities" : "Most Popular Amenities",
+    "viewOnMap" : "View on map",
+    "more" : "More"
+}
+```
+
 #### Map Component
 
-```javascript
+```
 <hotel-map 
         enable-nearby=true 
         enable-direction=true 
         center=[[geocode]] 
         hotel-name = [[name]]>
 </hotel-map>
+
 /// geocode
 geocode = {
     lat : 43.12
     lang : 34.34
 }
+```
+
+#### Guest Review Summary
+
+```html
+    <t-guest-review-summary
+            trustu-id = "trustuid"
+            rating = "3.5"
+            review-type = "EXCELLENT"
+            review-count = "1375">
+    </t-guest-review-summary>
+```
+
+#### Trust You Review
+
+```html
+<t-trustu-review
+        trustu-id="trustuid">
+</t-trustu-review>
+
+        
 ```
