@@ -64,7 +64,7 @@
 ```
 
 ```javascript
-//popular amenities - This are static list. For display popular list, need to map these static list with hotel amenities.
+//popular amenities - This are static list. For display popular list, need to map these static list with hotel master amenity name.
 popularStaticAmenities = [
     "Restaurants",
     "Parking",
@@ -97,27 +97,33 @@ hotel  = {
             "amenities": [
                 {
                     "type": "Hotel",
-                    "category": "24h check-in"
+                    "category": "24h check-in",
+		    "masterAmentity" : ""
                 },
                 {
                     "type": "Hotel",
-                    "category": "24h. Reception"
+                    "category": "24h. Reception",
+		    "masterAmentity" : ""
                 },
                 {
                     "type": "Room",
-                    "category": "Air-conditioned in common areas"
+                    "category": "Air-conditioned in common areas",
+		    "masterAmentity" : ""
                 },
                 {
                     "type": "Hotel",
-                    "category": "American Express"
+                    "category": "American Express",
+		    "masterAmentity" : ""
                 },
                 {
                     "type": "Hotel",
-                    "category": "Bar-s"
+                    "category": "Bar-s",
+		    "masterAmentity" : ""
                 },
                 {
                     "type": "Room",
-                    "category": "Bath"
+                    "category": "Bath",
+		    "masterAmentity" : ""
                 },
             ],
              "photoUrls": [
