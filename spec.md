@@ -4,7 +4,7 @@
 #### Summary Section
 
 ```html
-	<hotel-details-heading 
+	<t-hotel-details-heading 
 			title="String"
 			sub-title = "String"
 			rating="4"
@@ -12,7 +12,7 @@
 			miles=""
 			price = [[price]]
 			resource = [[resource]]>
-	</hotel-details-heading>
+	</t-hotel-details-heading>
 ```
 
 ```javascript
@@ -34,10 +34,13 @@
 #### Gallary
 
 ```html
-	<hotel-gallary 
+	<t-gallary 
+		   type ="Single | Multiple"
                     images=[images]
-                    enable-tiles="true">
-    </hotel-gallary>
+                    enable-tiles="true"
+		    popup-type = "FullWidth | 50%"
+		    >
+    </t-gallary>
 
 
 	images = [
@@ -338,12 +341,15 @@ rooms =
 #### Map Component
 
 ```
-<hotel-map 
+<t-map 
         enable-nearby=true 
         enable-direction=true 
-        center=[[geocode]] 
-        hotel-name = [[name]]>
-</hotel-map>
+        center=[[geocode]]
+	title = "Hotel Name"
+	sub-title = "Address"
+        location-name = "Location Name"
+	location-details= "Location full address">
+</t-map>
 
 /// geocode
 geocode = {
@@ -356,7 +362,6 @@ geocode = {
 
 ```html
     <t-guest-review-summary
-            trustu-id = "trustuid"
             rating = "3.5"
             review-type = "EXCELLENT"
             review-count = "1375">
