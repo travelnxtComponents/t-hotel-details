@@ -383,3 +383,26 @@ geocode = {
 
         
 ```
+
+## Scope
+- Component should work across all major browsers - Chrome / Mozilla / Safari / Opera / IE etc.
+- Verify all exposed public properties are working independently and with complex combination.
+- Verify all exposed methods and events are working.
+- Same set of code should work across three views i.e. Desktop/ Tablet and Mobile
+- Validations should work for Mandatory fields
+- 
+
+## Steps to Start
+- Set Github repository at your end for this project, we will merge them later
+- You can use Google/Vaadin's elements (like calendar element and text boxes etc.)
+
+## Performance standard
+- Any component if opened via [web page tester](https://www.webpagetest.org/), it should load under 500ms (milli seconds).
+
+## Documents
+- Visual designs for components - https://projects.invisionapp.com/share/6E9PJ7R4Q#/screens/234137579
+- API access : URL - http://demo.travelnxt.com/dev
+- Tavisca Elements - https://github.com/atomelements and https://github.com/travelnxtelements
+- Vaadin elements - https://vaadin.com/docs/-/part/elements/elements-getting-started.html
+- Google - https://elements.polymer-project.org/browse?package=google-web-components
+- Tavisca Web component style Guide - https://drive.google.com/open?id=0B7BT_2nBFNYVR2tscE9pRnVJYmc
