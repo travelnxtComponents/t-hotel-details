@@ -18,8 +18,8 @@
 ```javascript
 
 	price = {
-		price : '$402',
-		strikeOut : '$459'
+		bookPrice : '$402',
+		originalPrice : '$459'
 		discount : '25%'
 	}
 
@@ -66,12 +66,12 @@
 ```javascript
 //popular amenities - This are static list. For display popular list, need to map these static list with hotel master amenity name.
 popularStaticAmenities = [
-    "Restaurants",
-    "Parking",
-    "Wi-Fi",
-    "Fitness Center",
-    "Outdoor Pool",
-    "Spa"
+    { name: "Restaurants", "logo" : ""},
+    { name : "Parking", "logo" : ""},
+    { name : "Wi-Fi",  "logo" : ""},
+    { name : "Fitness Center", "logo" : ""},
+    { name: "Outdoor Pool", "logo" :""},
+    { name: "Spa", "logo" : ""}
 ]
 
 // Hotel Object
@@ -218,7 +218,7 @@ rooms =
 		[
 			{
 
-                "id": "MTAzX18xMzEzMzk5XzEyNTMyMzMwXzkwOTQwNzNfMl8xXzBfXzkwOTE2X18yMS4zNF9ffDF8MTpBOjI1fF9fUGF2aWxpb25QYXZpbGlvbiB3aXRoIDEgYmVkKHMpMXwxfDE6QToyNXw",
+                "id": "ad234dw",
                 "name": "Pavilion",
                 "description": "Pavilion with 1 bed(s)",
                 "quantity": 1,
@@ -277,27 +277,13 @@ rooms =
                 "roomOccupancyTypes": [
                     "|1|1:A:25|"
                 ],
-                "dailyRates": [
-                    {
-                        "day": "Tuesday",
-                        "amount": 0,
-                        "currency": null,
-                        "displayAmount": " 0"
-                    },
-                    {
-                        "day": "Wednesday",
-                        "amount": 0,
-                        "currency": null,
-                        "displayAmount": " 0"
-                    }
-                ],
+                "dailyRates": [ "$45", "$45", "$50", "$45"],                    
                 "inclusions": [
                     "Resort Fee for USD 17.90 will be charged by hotel."
                 ],
                 "isPreferred": false,
                 "deals": null,
                 "source": {
-                    "inventoryId": "MTAzX18xMzEzMzk5XzEyNTMyMzMwXzkwOTQwNzNfMl8xXzBfXzkwOTE2X18yMS4zNF9ffDF8MTpBOjI1fF9fUGF2aWxpb25QYXZpbGlvbiB3aXRoIDEgYmVkKHMpMXwxfDE6QToyNXw",
                     "id": 103,
                     "name": "TouricoTGS Test"
                 },
