@@ -146,41 +146,18 @@ hotel  = {
             "fare": {
                 "type": "Published",
                 "code": null,
-                "isRefundable": false,
-                "baseFare" : {
-                    	"displayAmount" : "$26.58",
-                    	"amount" : 26.58,
-                    	"currency" : "USD"
-                    },
-                "discount":{
-                	"displayAmount" : "$10.0",
-                	"amount" : 10.00,
-                	"currency" : "USD"
-                },
+                "currency" : "USD",
+                "baseFare" : 26.58,
+                "discount":10.00,
                 "fees" : [
                 	{
                 		"type": "Agency",
-                        "displayAmount" : "$10",
                         "amount" : 10,
-                        "currency" : "USD"
-	                    
                 	}
                 ],
-                "totalFee":{
-                	"displayAmount" : "$10.00",
-                	"amount" : "10",
-                	"currency" : "USD"
-                },
-                "totalTax" : {
-                	"displayAmount" : "$5.58",
-                	"amount" : 5.58,
-                	"currency" : "USD"
-                },
-                "totalFare" : {
-                	"displayAmount" : "$26.58",
-                	"amount" : 26.58,
-                	"currency" : "USD"
-                }
+                "totalFee":10.00,
+                "totalTax" : 5.58,
+                "totalFare" : 26.58
             },
             "isPostPaid": false,
             "isSoldOut": false,
@@ -235,43 +212,20 @@ rooms =
                     }
                 ],
                 "fare": {
-
                     "type": "Published",
                     "code": null,
-                    "isRefundable": true,
-                    "baseFare" : {
-                    	"displayAmount" : "$26.58",
-                    	"amount" : 26.58,
-                    	"currency" : "USD"
-                    },
-                    "discount":{
-                    	"displayAmount" : "$10.0",
-                    	"amount" : 10.00,
-                    	"currency" : "USD"
-                    },
+                    "currency" : "USD",
+                    "baseFare" : 26.58,
+                    "discount":10.00,
                     "fees" : [
-                    	{
-                    		type: "Agency",
-                            "displayAmount" : "$10",
+                        {
+                            "type": "Agency",
                             "amount" : 10,
-                            "currency" : "USD"
-                    	}
+                        }
                     ],
-                    "totalFee":{
-                    	"displayAmount" : "$10.00",
-                    	"amount" : "10",
-                    	"currency" : "USD"
-                    },
-                    "totalTax" : {
-                    	"displayAmount" : "$5.58",
-                    	"amount" : 5.58,
-                    	"currency" : "USD"
-                    },
-                    "totalFare" : {
-                    	"displayAmount" : "$26.58",
-                    	"amount" : 26.58,
-                    	"currency" : "USD"
-                    }
+                    "totalFee":10.00,
+                    "totalTax" : 5.58,
+                    "totalFare" : 26.58
                 },
                 "type": "1313399_12532330_9094073_2_1_0",
                 "roomOccupancyTypes": [
