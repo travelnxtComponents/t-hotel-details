@@ -330,12 +330,12 @@ geocode = {
 - Verify all exposed methods and events are working.
 - Same set of code should work across three views i.e. Desktop/ Tablet and Mobile
 - Validations should work for Mandatory fields
-- First time when user lands on Hotel details page ->Modify search button should appear as disabled.
-- If customer click any of field present on search widgets like "date", "pax selection" etc. the button will start appearing as active.
+- SearchWidget - First time when user lands on Hotel details page ->Modify search button should appear as disabled.
+- SearchWidget - If customer click on any of field present on search widgets like "date", "pax selection" etc. the button will start appearing as active.
 - Now it will remain active untill customer click on it.
-- Room listing - If search is for single room, just mention "Room - RoonName".
+- Room listing - If search is for single room, just mention "Room - RoomName".
 - Room listing - Click on "Select" collapse the room so that user can move to other rooms.
-- Map - Google zoomIn and zoomOut to show in right most buttom
+- Map - Google zoomIn and zoomOut to show in right most buttom corner
 - Show Points of interest in left hand side of map component.
 
 ## Steps to Start
