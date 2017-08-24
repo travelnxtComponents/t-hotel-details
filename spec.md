@@ -280,7 +280,9 @@ rooms =
     "continueToCheckout" : "CONTINUE TO CHECKOUT",
     "mostPopularAmenities" : "Most Popular Amenities",
     "viewOnMap" : "View on map",
-    "more" : "More"
+    "more" : "More",
+    "foundRightProperty" = "Didn't find the right property?",
+    "continueSearch" = "CONTINUE TO SEARCH"
 }
 ```
 
