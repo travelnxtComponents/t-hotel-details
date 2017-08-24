@@ -263,7 +263,8 @@ rooms =
         "selected" : "Selected",
         "more" : "more",
         "roomPolicy" : "room Policy",
-        "showMoreRooms" : "Show More Rooms"
+        "showMoreRooms" : "Show More Rooms",
+	"dailyRates": "Daily Rate"
     },
 
     "loading" : "Loading..",
