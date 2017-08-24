@@ -281,8 +281,8 @@ rooms =
     "mostPopularAmenities" : "Most Popular Amenities",
     "viewOnMap" : "View on map",
     "more" : "More",
-    "foundRightProperty" = "Didn't find the right property?",
-    "continueSearch" = "CONTINUE TO SEARCH"
+    "foundRightProperty" : "Didn't find the right property?",
+    "continueSearch" : "CONTINUE TO SEARCH"
 }
 ```
 
