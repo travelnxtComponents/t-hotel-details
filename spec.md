@@ -176,7 +176,6 @@ rooms =
       "depositRequired": false,
       "guaranteeRequired": false,
       "supplierHotelId": "1317110",
-      "supplierId": "hbgau0qwow",
       "inclusions": ["Resort Fee for USD 17.90 will be charged by hotel."],
       "additionalCharges": [],
       "refundability": "Unknown",
