@@ -75,104 +75,56 @@ popularStaticAmenities = [
 ]
 
 // Hotel Object
-hotel  = {
-            "id": "55610",
-            "name": "THE WESTIN LAKE LAS VEGAS RESORT &amp; SPA",
-            "rating": 5,
-            "address": "101 MONTELAGO BOULEVARD  HENDERSON",
-            "phoneNumber": "702 567 1234",
-            "distance": 13.86,
-            
-            "descriptions": [
-                {
-                    "Type": "",
-                    "value": "The luxury hotel radiates a Moroccan atmosphere and comprises a total of 493 rooms spread over 9 floors. Amongst the hotel's facilities count an air-conditioned lobby with a 24-hour reception desk, lift access, a hotel safe, a cloakroom and a currency exchange desk. Further amenities include a newspaper stand, a range of shops, a hairdressing salon, a casino, a kids' club, and free car parking spaces. Dining options include a cozy bar and a pleasing restaurant. Guests may also make use of the public Internet access in addition to the laundry and 24-hour room services. Self and valet parking, secure golf bag storage, concierge-assisted boarding passes, and intra-resort on-demand transportation are also offered."
-                }
-            ],
-            "heroImageUrl": "http://d3mj096p5q0e20.cloudfront.net/ti/HBD/55610/043509a_hb_a_001.jpg",
-            "geoCode": {
-                "lat" : 36.113
-                "long" : -114.925
-            },
-            "amenities": [
-                {
-                    "type": "Hotel",
-                    "category": "24h check-in",
-		    "masterAmentity" : ""
-                },
-                {
-                    "type": "Hotel",
-                    "category": "24h. Reception",
-		    "masterAmentity" : ""
-                },
-                {
-                    "type": "Room",
-                    "category": "Air-conditioned in common areas",
-		    "masterAmentity" : ""
-                },
-                {
-                    "type": "Hotel",
-                    "category": "American Express",
-		    "masterAmentity" : ""
-                },
-                {
-                    "type": "Hotel",
-                    "category": "Bar-s",
-		    "masterAmentity" : ""
-                },
-                {
-                    "type": "Room",
-                    "category": "Bath",
-		    "masterAmentity" : ""
-                },
-            ],
-             "photoUrls": [
-
-                { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_004.jpg", "category" : "room"},
-                { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_006.jpg", "category" : "hotel"},
-                { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_007.jpg","category" : "room"}
-                { "url" :"http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_w_002.jpg","category" : "hotel"}
-            ],
-            "pointsOfInterest": [
-                { 
-                    "name" : "name",
-                    "description": "description"
-                }
-            ]
-            "rooms": null,
-            "isCancellable": true,
-            "allPassengersInfoRequired": false,
-            "isGuaranteeRequired": true,
-            "fare": {
-                "type": "Published",
-                "code": null,
-                "currency" : "USD",
-                "baseFare" : 26.58,
-                "discount":10.00,
-                "fees" : [
-                	{
-                		"type": "Agency",
-                        "amount" : 10,
-                	}
-                ],
-                "totalFee":10.00,
-                "totalTax" : 5.58,
-                "totalFare" : 26.58
-            },
-            "isPostPaid": false,
-            "isSoldOut": false,
-            "isPreferred": false,
-            "source": {
-                "inventoryId": "55610",
-                "id": 111,
-                "name": "HotelBeds Test"
-            },
-
-            "userRating" : "3.4",
-            "userReviewCount" : 500
-            "reviewType" : "Excellent"
-            
-        }
+hotel  =    {
+        "id": "55610",
+        "name": "THE WESTIN LAKE LAS VEGAS RESORT &amp; SPA",
+        "rating": 5,
+        "address": "101 MONTELAGO BOULEVARD  HENDERSON",
+        "phones": [
+            {
+              "type": "Unknown",
+              "num": "555-0173",
+              "countryCode": "1",
+              "ext": "123",
+              "areaCode": "200"
+            }
+          ],         
+        "descriptions": [
+            {
+                "Type": "",
+                "value": "The luxury hotel radiates a Moroccan atmosphere and comprises a total of 493 rooms spread over 9 floors. Amongst the hotel's facilities count an air-conditioned lobby with a 24-hour reception desk, lift access, a hotel safe, a cloakroom and a currency exchange desk. Further amenities include a newspaper stand, a range of shops, a hairdressing salon, a casino, a kids' club, and free car parking spaces. Dining options include a cozy bar and a pleasing restaurant. Guests may also make use of the public Internet access in addition to the laundry and 24-hour room services. Self and valet parking, secure golf bag storage, concierge-assisted boarding passes, and intra-resort on-demand transportation are also offered."
+            }
+        ],
+        "heroImageUrl": "http://d3mj096p5q0e20.cloudfront.net/ti/HBD/55610/043509a_hb_a_001.jpg",
+        "geoCode": {
+            "lat" : 36.113,
+            "long" : -114.925
+        },
+        "amenities": [
+            {
+                "category":"Parking",
+                "name":"Long-term parking (surcharge)",                             
+                "description" : ""
+            }
+        ], 
+        "images":[
+            { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_004.jpg", "category" : "room"},
+            { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_006.jpg", "category" : "hotel"},
+            { "url" : "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_f_007.jpg","category" : "room"},
+            { "url" :"http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55610/043509a_hb_w_002.jpg","category" : "hotel"}
+        ],
+        "areaAttractions":[
+            {
+                "name":"Las Vegas NV (LAS McCarran Intl)",
+                "description":"Las Vegas NV (LAS-McCarran Intl) --3.3 km",
+                "category":null
+            }
+        ],
+        "rooms": null,        
+        "supportsPostpaidRates": false,
+        "supportsPrepaidRates": false       
+        
+    }
 ```
 #### Room Listing
 ```html
@@ -194,56 +146,85 @@ loading = true; // if value true, then display loading
 rooms = 
 		[
 			{
-
-                "id": "ad234dw",
-                "name": "Pavilion",
-                "description": "Pavilion with 1 bed(s)",
-                "quantity": 1,
-                "isPrepaid": true,
-                "guaranteeRequired": false,
-                "depositRequired": false,
-                "policies": [
-                    {
-                        "description": "Minimum age for check in is 21 years old with valid id and credit card",
-                        "isQuantifiable": false,
-                        "window": null,
-                        "penalty": null,
-                        "type": "Disclaimer"
-                    }
-                ],
-                "fare": {
-                    "type": "Published",
-                    "code": null,
-                    "currency" : "USD",
-                    "baseFare" : 26.58,
-                    "discount":10.00,
-                    "fees" : [
-                        {
-                            "type": "Agency",
-                            "amount" : 10,
-                        }
-                    ],
-                    "totalFee":10.00,
-                    "totalTax" : 5.58,
-                    "totalFare" : 26.58
-                },
-                "type": "1313399_12532330_9094073_2_1_0",
-                "roomOccupancyTypes": [
-                    "|1|1:A:25|"
-                ],
-                "dailyRates": [ "$45", "$45", "$50", "$45"],                    
-                "inclusions": [
-                    "Resort Fee for USD 17.90 will be charged by hotel."
-                ],
-                "isPreferred": false,
-                "deals": null,
-                "source": {
-                    "id": 103,
-                    "name": "TouricoTGS Test"
-                },
-                "areExtraTaxesApplicable": false,
-                "roomImages":[]
+    "id": "ad234dw",
+    "name": "Pavilion",
+    "desc": "Pavilion with 1 bed(s)",
+    "roomRate": {
+      "fare": {
+        "currency": "USD",
+        "baseFare": 284.82,
+        "fees": [],
+        "taxes": [
+          {
+            "code": null,
+            "desc": "TotalTax",
+            "amount": 38.12
+          }
+        ],
+        "discount": null, // it is an Array
+        "totalFee": 0,
+        "totalTax": 38.12,
+        "totalDiscount": 0,
+        "totalFare": 322.94
+      },
+      "id":
+        "dd01baaa-4f0b-4b01-8fef-17213e21fcbc_13ymjvdineo_1158715_0##MTMxNzExMDsxMjY4MzI1NDsxMDE5NTUxNTsyOzE7MF98VVNHfF8xMjY4MzI1NF98VVNHfF8xLDFffFVTR3xfMV98VVNHfF8=",
+      "desc": null,
+      "code": "1317110;12683254;10195515;2;1;0",
+      "isPrepaid": true,
+      "rateType": "Negotiated",
+      "depositRequired": false,
+      "guaranteeRequired": false,
+      "supplierHotelId": "1317110",
+      "supplierId": "hbgau0qwow",
+      "inclusions": ["Resort Fee for USD 17.90 will be charged by hotel."],
+      "additionalCharges": [],
+      "refundability": "Unknown",
+      "dailyRate": [{
+        "date": "2017-01-02",
+        "amount": 24.55,
+        "discount": 10,
+        "taxIncluded": "true"
+      }],
+      "boardBasis": {
+        "code": null,
+        "desc": "Continental Breakfast",
+        "type": "BedAndBreakfast"
+      },
+      "cancellationPolicy": {
+        "text": "Cancellations or changes made during the applicable cancellation window are subject to a $50 penalty",
+        "penaltyRules": [
+          {
+            "value": 12.34,
+            "estimatedValue": 15.5,
+            "valueType": "Amount",
+            "window": {
+              "start": "2017-01-01T01:03",
+              "end": "2017-01-25T01:30"
             }
+          }
+        ]
+      },
+      "offer":  {
+        "title": "Summer Free Nights Bonanza",
+        "desc": "Stay for 5 nights and get 2 nights free",
+        "discountOffer": 0,
+        "percentageDiscountOffer": 0,
+        "stayOffer": {
+          "stayNights": 5,
+          "freeNights": 2
+        }
+      },
+      "policies": [ {
+        "type": "Cancellation",
+        "text": "Cancellations must be made at least 3 days prior to arrival in order to avoid a full-stay penalty, but not to exceed 3 nights room & tax. For example, a cancellation penalty for a 2-night stay will be 2 nights room and tax. A cancellation penalty for a 5-night stay will be 3 nights room and tax"
+      }] 
+      
+    },
+    "adultOccupancy": 1,
+    "childOccupancy": 0   
+  }
+
 ]
 
 ```
