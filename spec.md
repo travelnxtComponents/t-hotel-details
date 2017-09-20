@@ -152,9 +152,9 @@ hotel  =    {
     "fare": null,
     "deal": null,
     "userReview": {
-      "Rating": "3.5",
-      "Type": "Excellent",
-      "Count": 500
+      "rating": "3.5",
+      "rype": "Excellent",
+      "count": 500
     },
     "checkinCheckoutPolicy": [
       {
@@ -184,7 +184,7 @@ hotel  =    {
 loading = true; // if value true, then display loading 
 //room list object
 rooms = 
-	[
+[
       {
         "id": "8025ec42-019e-494d-b822-801ab926d8ec",
         "name": "Premium",
@@ -269,8 +269,13 @@ rooms =
           ]
         },
         "recommendationId": "02158680-897f-4111-8a53-664f78b3bd83",
-        "bedDetails": null,
-        "roomViews": [],
+        "bedDetails": [ {
+            "type": "King",
+            "desc": "King-size bed",
+            "count": 1
+          }],
+        "roomViews": [ "Front view",
+            "Sea View"],
         "group": 0
       },
       {
