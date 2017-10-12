@@ -168,6 +168,7 @@ details  :    {
       "rype": "Excellent",
       "count": 500
     },
+    "trustuid":"trustuid",
     "checkinCheckoutPolicy": [
       {
         "inTime": "15:0",
