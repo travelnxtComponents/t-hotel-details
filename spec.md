@@ -389,11 +389,7 @@ rooms =
     "viewOnMap" : "View on map",
     "more" : "More",
     "foundRightProperty" : "Didn't find the right property?",
-    "continueSearch" : "CONTINUE TO SEARCH",
-    "currencySymbols":{
-      "USD":"$",
-      "INR":"₹"
-    }
+    "continueSearch" : "CONTINUE TO SEARCH"
 }
 ```
 
