@@ -9,7 +9,7 @@
 			sub-title = "String"
 			rating="4"
 			phone=""
-			miles=""
+			distance=""
 			price = [[price]]
 			resource = [[resource]]>
 	</t-hotel-details-heading>
@@ -75,12 +75,25 @@ popularStaticAmenities = [
 ]
 
 // Hotel Object
-hotel  =    {
+hotel={
+overview : {
+  "name": "Westgate Las Vegas Resort & Casino",
+  "rating": 4,
+  "phone": "",
+  "address": "3000 Paradise Road, , Las Vegas 89109",
+  "distance":{
+    "From":"City Center",
+    "amount":3.2
+    "unit":"Mile"
+  },
+  "price":{
+		"bookPrice" : "$402",
+		"originalPrice" : "$459",
+		"discount" : "25%"
+	}
+},
+details  :    {
     "id": "1153848",
-    "name": "Westgate Las Vegas Resort & Casino",
-    "rating": 4,
-    "phone": "",
-    "address": "3000 Paradise Road, , Las Vegas 89109",
     "amenities": [
       { "name": "Pay movies", "description": null, "category": null },
       { "name": "Poolside bar", "description": null, "category": "Bar" },
@@ -141,7 +154,6 @@ hotel  =    {
       }
     ],
     "hotelChain": "Westgate Resorts",
-    "rooms": null,
     "policies": [
       {
         "type": "General",
@@ -162,9 +174,10 @@ hotel  =    {
         "outTime": "11:0",
         "days": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
       }
-    ],
-    "type": "hotel"
-  }
+    ]
+  },
+rooms: null,
+}
 ```
 #### Room Listing
 ```html
@@ -357,7 +370,7 @@ rooms =
         "more" : "more",
         "roomPolicy" : "room Policy",
         "showMoreRooms" : "Show More Rooms",
-	"dailyRates": "Daily Rate"
+	      "dailyRates": "Daily Rate"
     },
 
     "loading" : "Loading..",
@@ -376,7 +389,11 @@ rooms =
     "viewOnMap" : "View on map",
     "more" : "More",
     "foundRightProperty" : "Didn't find the right property?",
-    "continueSearch" : "CONTINUE TO SEARCH"
+    "continueSearch" : "CONTINUE TO SEARCH",
+    "currencySymbols":{
+      "USD":"$",
+      "INR":"₹"
+    }
 }
 ```
 
