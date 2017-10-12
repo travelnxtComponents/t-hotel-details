@@ -168,7 +168,7 @@ details  :    {
       "rype": "Excellent",
       "count": 500
     },
-    "trustuid":"trustuid",
+    "trustuId":"trustuid",
     "checkinCheckoutPolicy": [
       {
         "inTime": "15:0",
@@ -428,7 +428,7 @@ geocode = {
 
 ```html
 <t-trustu-review
-        trustu-id="trustuid">
+        trustu-id="trustuId">
 </t-trustu-review>
 
         
